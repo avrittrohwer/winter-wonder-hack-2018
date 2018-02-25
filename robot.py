@@ -1,4 +1,3 @@
-from picamera import PiCamera
 from envirophat import motion 
 from time import sleep
 import pantilthat
@@ -42,14 +41,6 @@ def main():
     # init cam motor
     global motor
     motor = pantilthat.PanTilt()
-    #motor.pan(0)
-
-    # init cam
-    cam = PiCamera()
-    #cam.start_preview()
-
-    # handle button toggle
-    touchphat.all_off()
 
     # set up wheel motors
     ESC = 4
